@@ -1,0 +1,18 @@
+<h1>CHAT</h1>
+
+<h2>Write a message</h2>
+
+<form method="POST">
+  Name: <input type="text" name="sender" /><br/>
+  Message: <input type="text" name="message" /><br/>
+  <input type="submit" value="Submit!" />
+
+</form>
+
+<h2>Messages</h2>
+
+<% it.messages.forEach ((message) => { %>
+
+    "<%= message.sender %>: <%= message.message %>"  
+<br>
+<% }); %>
